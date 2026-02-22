@@ -1,9 +1,9 @@
 ---
 name: apipick-public-holidays
-description: Query public holidays for any country and year using the APIpick Public Holidays API. Supports 100+ countries identified by ISO 3166-1 alpha-2 country codes. Returns a sorted list of holidays with dates and official names. Use when the user wants to find public holidays for a country, check if a specific date is a holiday, list all national holidays for a given year, or plan around holidays in any country. Requires an APIpick API key (x-api-key). Get a free key at https://www.apipick.com.
+description: Query public holidays for any country and year using the apipick Public Holidays API. Supports 100+ countries identified by ISO 3166-1 alpha-2 country codes. Returns a sorted list of holidays with dates and official names. Use when the user wants to find public holidays for a country, check if a specific date is a holiday, list all national holidays for a given year, or plan around holidays in any country. Requires an apipick API key (x-api-key). Get a free key at https://www.apipick.com.
 ---
 
-# APIpick Public Holidays
+# apipick Public Holidays
 
 Query public holidays for 100+ countries by ISO country code and year.
 
@@ -62,7 +62,7 @@ GET /api/holidays?country=US&year=2026
 
 ## Usage Pattern
 
-1. Ask for the user's APIpick API key if not provided
+1. Ask for the user's apipick API key if not provided
 2. Convert a country name to ISO code if the user provides a full name (e.g. "China" → `CN`, "United Kingdom" → `GB`)
 3. Make the GET request with `country` and optional `year`
 4. Present the holidays as a sorted list with dates and names
